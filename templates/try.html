@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mask Detection</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles/styles.css')}}">
+    
+    
+</head>
+<body>
+    <div class="data-scroll-container">
+        <header>
+            <div class="container">
+                
+                <nav class="nav">
+  
+  
+                    <a href="index.html" class="logo">SPAM DETECTION</a>
+                    <div class = "mainimage">
+                        <img src="{{url_for('static', filename = 'images/Grey.svg')}}" class = "main-image">
+                    </div>
+                    <ul class="nav-list" id="nav-list">
+                        
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">WEBSITE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                        <p>© 2021 FACE MASK DETECTION by MAS</p>
+                        
+                    </ul>
+
+                    <div id="hamburger" class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="contentScroller">
+                <div class="pages">
+                    <section class="hero">
+                        <div class="latestrelease">
+                                
+                            <h1>DETECT IF AN EMAIL OR SMS IS A SPAM</h1>
+                            <p>Enter the message or mail that you want to predict for</p>
+                            <form action="{{ url_for('predict')}}" method="POST">
+                                <textarea name="message" rows="6" cols="50" placeholder="Enter text here..."></textarea>
+                                <br/>
+                        
+                                <button type="Submit" class="btn-info" value="Predict">CHECK</button>
+
+                                {% if prediction == 1%}
+                                <h2 style="color:#CC4963;">Spam</h2>
+                                {% elif prediction == 0%}
+                                <h2 style="color:#75FFDB;">Not a Spam (It's a ham)</h2>
+	                            {% endif %}
+                            </form>
+
+                            <a href="#secondpage">
+                                <div class="arrow"></div>
+                            </a>
+                            
+                            
+                            
+                            
+                        </div>
+                    
+                    </section>
+
+                    <section class="secondpage" id = "secondpage">
+                        <div class="container1">
+                            <h1>Contact</h1>
+                            <p>Feel free to reach out to me via email if you have a project in mind, or maybe just say 'hi'. I don't mind making new friends. I'm currently looking for a full-time position as a Junior Data Scientist or somewhere in the realms of Data Science.
+                                Hope to meet you soon !!
+                            </p>
+                            <ul class = "list-contact">
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">LinkedIn</span>
+                                        <a href="http://www.linkedin.com/whodoibenow">/WHODOIBENOW</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">GitHub</span>
+                                        <a href="http://www.github.io/whodoibenow">/WHODOIBENOW</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Kaggle</span>
+                                        <a href="https://www.kaggle.com/whodoibenow">/WHODOIBENOW</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Behance</span>
+                                        <a href="http://www.behance.net/akatheblackbird">/AKATHEBLACKBIRD</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Twitter</span>
+                                        <a href="http://www.twitter.com/sodumbali">/SODUMBALI</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                
+                            </ul>  
+                        </div>
+                        <div class="container2">
+                            <ul class = "list-contact">
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Email</span>
+                                        <a href="mailto:masooque1@gmail.com">MASOOQUE1@GMAIL.COM</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Location</span>
+                                        <a>SILIGURI - INDIA  *WORLDWIDE - REMOTE</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span class="listcontent">
+                                        <span class="platform">Resume</span>
+                                        <a href="http://www.behance.net/akatheblackbird">DOWNLOAD</a>
+                                    </span>
+                                </li>
+                                <hr>
+                                
+                                
+                            </ul>  
+                        </div>
+                        
+
+                    </section>
+                    
+                    <section class="mobile-social">
+                        <div class="mobilesocial">
+                            
+                            <a href="instagram.com/who.is.ali"><img src="/static/images/Instagram.svg"></a>
+                            
+                            <a href="behance.net/akatheblackbird"><img src="/static/images/Behance.svg"></a>
+                            <a href="linkedin.com/whodoibenow"><img src="/static/images/LinkedIn.svg"></a>
+                        </div>
+                    </section>
+    
+                    <section class="footer-content">
+                        
+                        <div class="footertext">© 2021 FACE MASK DETECTION by MAS</div>
+                        
+                        <div class="socialbox">
+                        
+                            <div class="socialtext">
+                
+                                <a href="instagram.com/who.is.ali"><img src="/static/images/Instagram.svg"></a>
+                                <a href="behance.net/akatheblackbird"><img src="/static/images/Behance.svg"></a>
+                                <a href="linkedin.com/whodoibenow"><img src="/static/images/LinkedIn.svg"></a>
+                
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </section>
+                </div>
+                
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar">
+                  
+                  </div>
+                </div>
+                <div class="progress-num"></div>
+            </div>
+            <!------- Alternate KIMI AVIATION
+
+            <div class="pageIndicator active">
+                <div class="topBar" style="height: 12.8431%;">
+                </div>
+                <div class="bottomBar" style="height: 87.1569%;">
+                    ::before
+                    ::after
+                </div>
+            </div>
+
+            ---------------->
+        
+            
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename = 'script/script.js')}}"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+    
+</body>
+</html>
