@@ -16,5 +16,13 @@ To test our model we should split the data into train dataset and test dataset. 
 
 ![Spam vs Ham](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Screenshot%202021-11-04%20at%207.40.23%20PM.png)
 
+## 3. Visualisation of Data
+
+![Code](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Screenshot%202021-11-04%20at%207.50.01%20PM.png)
+
+Let us see which are the most repeated words in the spam messages! 
+
+
+
 
 
