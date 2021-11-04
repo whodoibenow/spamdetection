@@ -8,5 +8,7 @@ Spam detection is a supervised machine learning problem. This means you must pro
 
 We are going to make use of NLTK for processing the messages, WordCloud and matplotlib for visualization and pandas for loading data, NumPy for generating random probabilities for train-test split.
 
+![Dependencies](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Screenshot%202021-11-04%20at%207.39.42%20PM.png)
+
 
 
