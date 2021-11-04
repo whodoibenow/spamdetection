@@ -18,6 +18,8 @@ To test our model we should split the data into train dataset and test dataset. 
 
 ## 3. Length vs Spam
 
+In general, longer the text, more possible it is to be a spam
+
 ![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknow5n.png)
 
 ## 4. Visualisation of Data
@@ -26,7 +28,7 @@ To test our model we should split the data into train dataset and test dataset. 
 
 Let us see which are the most repeated words in the Ham messages! 
 
-![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknown.png)
+![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/words.png)
 
 Let us see which are the most repeated words in the Ham messages! 
 
