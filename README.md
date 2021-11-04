@@ -30,7 +30,7 @@ Let us see which are the most repeated words in the Ham messages!
 
 ![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/words.png)
 
-Let us see which are the most repeated words in the Ham messages! 
+Let us see which are the most repeated words in the Spam messages! 
 
 
 ![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknown%20copy.png)
