@@ -16,7 +16,11 @@ To test our model we should split the data into train dataset and test dataset. 
 
 ![Spam vs Ham](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Screenshot%202021-11-04%20at%207.40.23%20PM.png)
 
-## 3. Visualisation of Data
+## 3. Length vs Spam
+
+![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknow5n.png)
+
+## 4. Visualisation of Data
 
 ![Code](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Screenshot%202021-11-04%20at%207.50.01%20PM.png)
 
@@ -29,7 +33,7 @@ Let us see which are the most repeated words in the Ham messages!
 
 ![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknown%20copy.png)
 
-## 4. Training the model
+## 5. Training the model
 
 We are going to implement two techniques: Bag of words and TF-IDF. I shall explain them one by one. Let us first start off with Bag of words.
 Preprocessing: Before starting with training we must preprocess the messages. First of all, we shall make all the character lowercase. This is because ‘free’ and ‘FREE’ mean the same and we do not want to treat them as two different words.
