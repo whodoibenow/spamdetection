@@ -39,6 +39,10 @@ We are going to implement two techniques: Bag of words and TF-IDF. I shall expla
 Preprocessing: Before starting with training we must preprocess the messages. First of all, we shall make all the character lowercase. This is because ‘free’ and ‘FREE’ mean the same and we do not want to treat them as two different words.
 Then we tokenize each message in the dataset. Tokenization is the task of splitting up a message into pieces and throwing away the punctuation characters. 
 
+![](https://github.com/whodoibenow/spamdetection/blob/main/Plots/Screenshot%202021-11-04%20at%207.59.13%20PM.png)
+
+
+
 
 
 
