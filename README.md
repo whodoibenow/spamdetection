@@ -22,6 +22,9 @@ To test our model we should split the data into train dataset and test dataset. 
 
 Let us see which are the most repeated words in the spam messages! 
 
+![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknown.png)
+![](https://github.com/whodoibenow/spamdetection/raw/main/Plots/Unknown%20copy.png)
+
 
 
 
