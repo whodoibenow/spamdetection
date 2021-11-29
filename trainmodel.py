@@ -65,6 +65,6 @@ print(accuracy_score(y_test,y_pred))
 
 import joblib
 
-joblib.dump(spam_detect_model,'pickle.pkl')
+joblib.dump(spam_detect_model,'nlp_model.pkl')
 
 joblib.dump(X,'transform.pkl')
